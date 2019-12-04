@@ -2,7 +2,7 @@ let hangman;
 
 class Hangman {
   constructor() {
-   this.words = ["ashe","warwick","heimindinguer","tryndamere"];
+   this.words = ["ashe","warwick","heimindinger","tryndamere"];
    this.secretWord = "";
    this.letters = [];
    this.guessedLetter = ""
@@ -13,29 +13,38 @@ getWord() {
   return this.words[Math.floor(Math.random()*this.words.length)];
 }
 
-//   checkIfLetter(keyCode) {
+checkIfLetter(keyCode) {
+  let letter = ["a","b","c","d","e","f","g","h","y","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+  return letter.includes(String.fromCharCode(keyCode).toLowerCase())
 
-//   }
+}
 
-//   checkClickedLetters(key) {
+checkClickedLetters(key) {
+  if(this.letters.includes(key)){
+  return false;
+  }
+  return true;
+}
 
-//   }
+addCorrectLetter(i) {
+  if
 
-//   addCorrectLetter(i) {
 
-//   }
+  push(i).this.guessedLetter
+  console.log(this.guessedLetter)
+}
 
-//   addWrongLetter(letter) {
+addWrongLetter(letter) {
 
-//   }
+}
 
-//   checkGameOver() {
+checkGameOver() {
 
-//   }
+}
 
-//   checkWinner() {
-
-//   }
+checkWinner() {
+  return true;
+}
 
 }
 
