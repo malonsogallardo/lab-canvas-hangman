@@ -6,11 +6,13 @@ class HangmanCanvas {
   }
 
   createBoard() {
+    this.ctx.clearRect(0,0,800,1200)
 
   }
 
   drawLines() {
-
+    this.ctx.beggingPath
+    this.ctx
   }
 
   writeCorrectLetter(index) {
