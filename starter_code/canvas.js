@@ -7,6 +7,7 @@ class HangmanCanvas {
 
   createBoard() {
     this.ctx.clearRect(0,0,800,1200)
+    console.log("hola")
 
   }
 

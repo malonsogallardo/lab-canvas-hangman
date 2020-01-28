@@ -85,6 +85,7 @@ class Hangman {
 }
 
 document.getElementById("start-game-button").onclick = () => {
+  console.log("hola")
   hangman = new Hangman();
 };
 
